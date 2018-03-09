@@ -10,7 +10,8 @@ var HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'dev';
 
 
-const packageJSON = require('./package.json');
+// const packageJSON = require('./package.json');
+const packageJSON = require('@dean_neal/core/package.json');
 
 module.exports = {
     entry: {
