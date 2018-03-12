@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@dean_neal/controls": "^0.0.10",
-    "@dean_neal/core": "^0.8.33",
+    "@dean_neal/core": "^0.9.1",
     "@dean_neal/http": "0.0.2",
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.0.20",

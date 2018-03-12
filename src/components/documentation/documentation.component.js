@@ -4,7 +4,12 @@ import Tpl from './documentation.component.html';
 
 @Decorators.ComponentDecorator({
     selector: 'app-documentation',
-    template: Tpl
+    template: Tpl,
+    props: ()=>{
+        return {
+            categories: []
+        }
+    }
 })
 export class DocumentationComponent {
     constructor(params) {
