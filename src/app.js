@@ -1,5 +1,5 @@
 import Styles from './styles/main.scss';
-import { API } from '@dean_neal/core';
+import { Application } from '@dean_neal/core';
 import {DatepickerComponent, TreeDebugComponent, BarChartComponent, LineChartComponent} from '@dean_neal/controls'
 
 import { HomeComponent } from './components/home/home.component';
@@ -16,12 +16,13 @@ import Plugins from './components/plugins';
 import UpperCaseDirective from './directives/upper-case.directive.js';
 
 
-import { Routes } from './router.js';
+import { Router } from './router.js';
 
-API.register({
-    root: RootComponent,
+Application.register({
+    // root: RootComponent,
     styles: Styles,
     components: [
+       RootComponent,
        HeaderComponent,
        HomeComponent,
 
@@ -35,6 +36,6 @@ API.register({
         UpperCaseDirective
     ],
     import: [Docs, Plugins, TreeDebugComponent],
-    routes: Routes
+    router: Router
 
 });
